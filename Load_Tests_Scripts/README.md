@@ -1,17 +1,16 @@
+# Gatling Load Testing Scripts for Microservice Version
 
-# Gatling Load Testing Scripts for microservice Version
-
-This folder contains scripts and programs enabling users to launch and analyze Gatling load tests for the microservice and monolith version of the application. Currently, the scripts are set up to load test the microservice version, but can be easily adapted to the monolith version.
+This folder contains scripts and programs for launching and analyzing Gatling load tests for both the microservice and monolithic versions of the application. Currently, the scripts are configured for the microservice version but can be easily adapted for the monolithic version.
 
 ## I. Getting the Application
 
-The code of the monolith and microservice versions of the app can be found in repos associated to this one, see https://github.com/orgs/ShellOnYou/repositories (including the frontend of the app).
+The code for both the monolithic and microservice versions of the app can be found in the repositories associated with this one: [ShellOnYou Repositories](https://github.com/orgs/ShellOnYou/repositories). This includes the frontend of the app.
 
-For a quicker setup you can resort to published docker images (see bellow). They do not include the frontend, but it is not necessary for the load tests. 
+For a quicker setup, you can use the published Docker images (see below). These images do not include the frontend, but it is not necessary for the load tests.
 
 ### 1. Obtaining Docker Images
 
-To obtain the necessary Docker images for running both the monolith and the microservice versions of the app (without the frontend part), visit the Docker Hub page listing the necessary containers:
+To obtain the necessary Docker images for running both the monolithic and microservice versions of the app (without the frontend), visit the Docker Hub page listing the required containers:
 
 [ICWS24Submission on Docker Hub](https://hub.docker.com/search?q=icws24submission)
 
@@ -31,11 +30,11 @@ Sample configuration files (`variables.env` and `docker-compose.yml`) are provid
 
 ## II. Running Load Tests
 
-Once the application is set up and running, load tests can be launched using Gatling.
+Once the application is set up and running, you can launch load tests using Gatling.
 
 ### 1. Gatling Installation
 
-1. Download and install Gatling version 3.9.0 (that used for tests reported in the paper).
+1. Download and install Gatling version 3.9.0 (the version used for the tests reported in the paper).
    
 2. Place the `user-files` directory at the root of the Gatling directory.
 
@@ -43,19 +42,18 @@ Once the application is set up and running, load tests can be launched using Gat
 
 1. Copy the scripts from the `bin` directory accompanying this README file into the `bin` directory of the installed Gatling.
    
-2. In `scale.sh` and `restart.sh`, specify the IP address of the machine where the application is installed (default is `192.168.3.136`). Also update the IP address in the Java file located in `user-files/simulations/LoadTestMicroservice.java` (or in `user-files/simulations/LoadTestMonolith.java` for the monolith version of the app)
+2. In `scale.sh` and `restart.sh`, specify the IP address of the machine where the application is installed (default is `192.168.3.136`). Also update the IP address in the Java file located in `user-files/simulations/LoadTestMicroservice.java` (or in `user-files/simulations/LoadTestMonolith.java` for the monolithic version).
 
 ### 3. Launching Load Tests
 
 To launch the load tests, execute the `run.sh` script located in the Gatling `bin` directory. You can customize the `run.sh` file to adjust the configuration settings.
 
-Gatling produces result files in a sub-directory of the `results` directory at the root of Gatling's directory. These files include an `index.html` file that can be opened in a browser for an in-depth graphical display of the results.
+Gatling produces result files in a sub-directory of the `results` directory at the root of the Gatling directory. These files include an `index.html` file that can be opened in a browser for an in-depth graphical display of the results.
 
 ### Additional Statistics Analysis
 
-For further statistics analysis, you can utilize the open-source tool available at:
+For further statistical analysis, you can utilize the open-source tool available at:
 
 [Gatling Report Tool](https://github.com/nuxeo/gatling-report)
 
-This tool was used to obtain data indicated in the tables of the paper.
-
+This tool was used to obtain the data indicated in the tables of the paper.
