@@ -5,7 +5,7 @@ This repo contains scripts for conducting load tests on the *microservice* versi
 
 See the README inside the *Load_Tests_Scripts* folder for more information.
 
-[1] *Is it Worth Migrating from monolith to Microservices? An Experience Report on Performance, Availability and Energy Usage*, V. Berry, A. Castelltort, B. Lange, J. Teriihoania, C. Tibermacine, C. Trubiani. Proc. of IEEE International Conference on Web Services (ICWS'24)
+[1] *Is it Worth Migrating a Monolith to Microservices? An Experience Report on Performance, Availability and Energy Usage*, V. Berry, A. Castelltort, B. Lange, J. Teriihoania, C. Tibermacine, C. Trubiani. Proc. of IEEE International Conference on Web Services (ICWS'24)
 
 
 
