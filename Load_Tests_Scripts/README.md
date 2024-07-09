@@ -1,13 +1,17 @@
 
-# Gatling Load Testing Scripts for MICROSERVICE Version
+# Gatling Load Testing Scripts for microservice Version
 
-This archive contains scripts and programs enabling users to launch and analyze Gatling load tests for the MICROSERVICE and MONOLITH version of the application. Currently, the scripts are set up to load test the MICROSERVICE version, but can be easily adapted to the MONOLITH version.
+This folder contains scripts and programs enabling users to launch and analyze Gatling load tests for the microservice and monolith version of the application. Currently, the scripts are set up to load test the microservice version, but can be easily adapted to the monolith version.
 
 ## I. Getting the Application
 
+The code of the monolith and microservice versions of the app can be found in repos associated to this one, see https://github.com/orgs/ShellOnYou/repositories (including the frontend of the app).
+
+For a quicker setup you can resort to published docker images (see bellow). They do not include the frontend, but it is not necessary for the load tests. 
+
 ### 1. Obtaining Docker Images
 
-To obtain the necessary Docker images for running both MONOLITH and MICROSERVICE versions of the application (without the frontend part), visit the Docker Hub page listing the necessary containers:
+To obtain the necessary Docker images for running both the monolith and the microservice versions of the app (without the frontend part), visit the Docker Hub page listing the necessary containers:
 
 [ICWS24Submission on Docker Hub](https://hub.docker.com/search?q=icws24submission)
 
