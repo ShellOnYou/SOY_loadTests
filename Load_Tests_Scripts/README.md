@@ -1,6 +1,6 @@
 # Gatling Load Testing Scripts for Microservice Version
 
-This folder contains scripts and programs for launching and analyzing Gatling load tests for both the microservice and monolithic versions of the application. Currently, the scripts are configured for the microservice version but can be easily adapted for the monolithic version.
+This folder contains scripts and programs for both launching and analyzing Gatling load tests for the two versions analyzed in the paper (the microservice and monolithic versions of the application). 
 
 ## I. Getting the Application
 
